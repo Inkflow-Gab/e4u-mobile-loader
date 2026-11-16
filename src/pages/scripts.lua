@@ -16,7 +16,7 @@ function Page.init()
 	listLabel.BackgroundTransparency = 1
 	listLabel.Size = UDim2.new(1, -24, 1, -12)
 	listLabel.Position = UDim2.new(0, 12, 0, 6)
-	listLabel.Font = Enum.Font.GothamSemibold
+	listLabel.Font = Enum.Font.GothamBlack
 	listLabel.TextSize = 13
 	listLabel.TextXAlignment = Enum.TextXAlignment.Left
 	listLabel.TextYAlignment = Enum.TextYAlignment.Top
