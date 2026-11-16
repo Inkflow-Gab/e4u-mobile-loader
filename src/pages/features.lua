@@ -74,7 +74,7 @@ function Page.init()
 	end)
 
 	C.section(page, "Emotes", 22)
-	C.label(page, "Emotes moved to Scripts page as our built-in e4u Emotes module.", 23, 20)
+	C.label(page, "Emotes moved to Scripts as e4u Emotes module.", 23, 20)
 	local openScripts = C.button(page, "Open Scripts Page", 24, true)
 	openScripts.MouseButton1Click:Connect(function() Core.showPage("Scripts") end)
 
