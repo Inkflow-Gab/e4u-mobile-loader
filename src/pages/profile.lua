@@ -26,12 +26,12 @@ function Page.refresh()
 			if v:IsA("Accessory") then accs += 1 end
 			if v:IsA("Clothing") or v:IsA("ShirtGraphic") then clothes += 1 end
 		end
-		Refs.ProfileBody.Text = string.format("Rig: %s  |  HP: %s/%s\nHRP: %s  |  Parts: %d\nAccessories: %d  |  Clothing: %d", rig, tostring(hp), tostring(maxhp), hrp and "yes" or "no", parts, accs, clothes)
+		Refs.ProfileBody.Text = string.format("RIG  %s\nHP   %s/%s\nHRP  %s   PARTS  %d\nACC  %d   CLOTHES  %d", rig, tostring(hp), tostring(maxhp), hrp and "yes" or "no", parts, accs, clothes)
 	elseif Refs.ProfileBody then
 		Refs.ProfileBody.Text = "Body: character not loaded"
 	end
 	if Refs.ProfileName then Refs.ProfileName.Text = lp.DisplayName end
-	if Refs.ProfileUser then Refs.ProfileUser.Text = "@" .. lp.Name .. " • " .. tostring(lp.UserId) end
+	if Refs.ProfileUser then Refs.ProfileUser.Text = "@" .. lp.Name .. "  |  " .. tostring(lp.UserId) end
 end
 
 function Page.init()
@@ -54,7 +54,7 @@ function Page.init()
 	nameLbl.BackgroundTransparency = 1
 	nameLbl.Position = UDim2.new(0, 94, 0, 12)
 	nameLbl.Size = UDim2.new(1, -104, 0, 20)
-	nameLbl.Font = Enum.Font.GothamBold
+	nameLbl.Font = Enum.Font.GothamBlack
 	nameLbl.TextSize = 15
 	nameLbl.TextColor3 = Color3.fromRGB(245,245,250)
 	nameLbl.TextXAlignment = Enum.TextXAlignment.Left
@@ -66,11 +66,11 @@ function Page.init()
 	userLbl.BackgroundTransparency = 1
 	userLbl.Position = UDim2.new(0, 94, 0, 33)
 	userLbl.Size = UDim2.new(1, -104, 0, 16)
-	userLbl.Font = Enum.Font.Gotham
+	userLbl.Font = Enum.Font.GothamBold
 	userLbl.TextSize = 12
 	userLbl.TextColor3 = Color3.fromRGB(160,160,175)
 	userLbl.TextXAlignment = Enum.TextXAlignment.Left
-	userLbl.Text = "@" .. lp.Name .. " • " .. tostring(lp.UserId)
+	userLbl.Text = "@" .. lp.Name .. "  |  " .. tostring(lp.UserId)
 	userLbl.ZIndex = 23
 	userLbl.Parent = profileCard
 
@@ -78,11 +78,11 @@ function Page.init()
 	ageLbl.BackgroundTransparency = 1
 	ageLbl.Position = UDim2.new(0, 94, 0, 51)
 	ageLbl.Size = UDim2.new(1, -104, 0, 16)
-	ageLbl.Font = Enum.Font.Gotham
+	ageLbl.Font = Enum.Font.GothamBold
 	ageLbl.TextSize = 12
 	ageLbl.TextColor3 = Color3.fromRGB(160,160,175)
 	ageLbl.TextXAlignment = Enum.TextXAlignment.Left
-	ageLbl.Text = "Account age: " .. tostring(lp.AccountAge) .. " days"
+	ageLbl.Text = "AGE  " .. tostring(lp.AccountAge) .. " DAYS"
 	ageLbl.ZIndex = 23
 	ageLbl.Parent = profileCard
 
@@ -90,7 +90,7 @@ function Page.init()
 	bodyLbl.BackgroundTransparency = 1
 	bodyLbl.Position = UDim2.new(0, 10, 0, 94)
 	bodyLbl.Size = UDim2.new(1, -20, 0, 72)
-	bodyLbl.Font = Enum.Font.Gotham
+	bodyLbl.Font = Enum.Font.GothamBold
 	bodyLbl.TextSize = 12
 	bodyLbl.TextColor3 = Color3.fromRGB(175,175,188)
 	bodyLbl.TextXAlignment = Enum.TextXAlignment.Left
