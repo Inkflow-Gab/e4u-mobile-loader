@@ -26,29 +26,29 @@ local function makeIcon(parent, kind, color)
 	end
 
 	if kind == "Home" then
-		f(parent, UDim2.new(0, 14, 0, 10), UDim2.new(0.5, -7, 0.5, -2), c, 2)
-		f(parent, UDim2.new(0, 16, 0, 3), UDim2.new(0.5, -8, 0.5, -6), c, 2)
+		f(parent, UDim2.new(0, 14, 0, 10), UDim2.new(0.5, -7, 0.5, -1), c, 2)
+		f(parent, UDim2.new(0, 16, 0, 4), UDim2.new(0.5, -8, 0.5, -7), c, 2)
 		f(parent, UDim2.new(0, 4, 0, 5), UDim2.new(0.5, -2, 0.5, 3), Color3.fromRGB(26,26,32), 1)
 	elseif kind == "Profile" then
 		f(parent, UDim2.new(0, 8, 0, 8), UDim2.new(0.5, -4, 0.5, -8), c, 8)
 		f(parent, UDim2.new(0, 14, 0, 8), UDim2.new(0.5, -7, 0.5, 1), c, 4)
 	elseif kind == "Features" then
-		f(parent, UDim2.new(0, 3, 0, 14), UDim2.new(0.5, -1, 0.5, -7), c, 2)
-		f(parent, UDim2.new(0, 14, 0, 3), UDim2.new(0.5, -7, 0.5, -1), c, 2)
-		f(parent, UDim2.new(0, 10, 0, 3), UDim2.new(0.5, -5, 0.5, -7), c, 2)
-		f(parent, UDim2.new(0, 10, 0, 3), UDim2.new(0.5, -5, 0.5, 5), c, 2)
+		f(parent, UDim2.new(0, 4, 0, 14), UDim2.new(0.5, -2, 0.5, -7), c, 2)
+		f(parent, UDim2.new(0, 14, 0, 4), UDim2.new(0.5, -7, 0.5, -2), c, 2)
+		f(parent, UDim2.new(0, 10, 0, 4), UDim2.new(0.5, -5, 0.5, -8), c, 2)
+		f(parent, UDim2.new(0, 10, 0, 4), UDim2.new(0.5, -5, 0.5, 5), c, 2)
 	elseif kind == "Scripts" then
 		f(parent, UDim2.new(0, 12, 0, 16), UDim2.new(0.5, -6, 0.5, -8), c, 2)
 		f(parent, UDim2.new(0, 8, 0, 2), UDim2.new(0.5, -4, 0.5, -4), Color3.fromRGB(26,26,32), 1)
 		f(parent, UDim2.new(0, 8, 0, 2), UDim2.new(0.5, -4, 0.5, 0), Color3.fromRGB(26,26,32), 1)
 		f(parent, UDim2.new(0, 6, 0, 2), UDim2.new(0.5, -4, 0.5, 4), Color3.fromRGB(26,26,32), 1)
 	elseif kind == "About" then
-		f(parent, UDim2.new(0, 4, 0, 4), UDim2.new(0.5, -2, 0.5, -8), c, 4)
-		f(parent, UDim2.new(0, 3, 0, 10), UDim2.new(0.5, -1, 0.5, -2), c, 2)
+		f(parent, UDim2.new(0, 5, 0, 5), UDim2.new(0.5, -2, 0.5, -8), c, 5)
+		f(parent, UDim2.new(0, 4, 0, 10), UDim2.new(0.5, -2, 0.5, -1), c, 2)
 	elseif kind == "Customizer" then
-		f(parent, UDim2.new(0, 14, 0, 3), UDim2.new(0.5, -7, 0.5, -6), c, 2)
-		f(parent, UDim2.new(0, 14, 0, 3), UDim2.new(0.5, -7, 0.5, -1), c, 2)
-		f(parent, UDim2.new(0, 14, 0, 3), UDim2.new(0.5, -7, 0.5, 4), c, 2)
+		f(parent, UDim2.new(0, 14, 0, 4), UDim2.new(0.5, -7, 0.5, -7), c, 2)
+		f(parent, UDim2.new(0, 14, 0, 4), UDim2.new(0.5, -7, 0.5, -2), c, 2)
+		f(parent, UDim2.new(0, 14, 0, 4), UDim2.new(0.5, -7, 0.5, 4), c, 2)
 		f(parent, UDim2.new(0, 4, 0, 4), UDim2.new(0.5, -5, 0.5, -6.5), Color3.fromRGB(245,245,250), 4)
 		f(parent, UDim2.new(0, 4, 0, 4), UDim2.new(0.5, 1, 0.5, -1.5), Color3.fromRGB(245,245,250), 4)
 		f(parent, UDim2.new(0, 4, 0, 4), UDim2.new(0.5, -3, 0.5, 3.5), Color3.fromRGB(245,245,250), 4)
@@ -82,9 +82,9 @@ function Core.init()
 	splashTitle.BackgroundTransparency = 1
 	splashTitle.Size = UDim2.new(1, 0, 0, 64)
 	splashTitle.Position = UDim2.new(0, 0, 0.5, -42)
-	splashTitle.Font = Enum.Font.GothamBold
+	splashTitle.Font = Enum.Font.GothamBlack
 	splashTitle.Text = "e4u"
-	splashTitle.TextSize = 58
+	splashTitle.TextSize = 60
 	splashTitle.TextColor3 = Color3.fromRGB(245, 245, 250)
 	splashTitle.TextTransparency = 1
 	splashTitle.ZIndex = 81
@@ -94,9 +94,9 @@ function Core.init()
 	splashSub.BackgroundTransparency = 1
 	splashSub.Size = UDim2.new(1, 0, 0, 22)
 	splashSub.Position = UDim2.new(0, 0, 0.5, 20)
-	splashSub.Font = Enum.Font.Gotham
-	splashSub.Text = "mobile hub loading"
-	splashSub.TextSize = 14
+	splashSub.Font = Enum.Font.GothamBold
+	splashSub.Text = "MOBILE HUB"
+	splashSub.TextSize = 12
 	splashSub.TextColor3 = Color3.fromRGB(150, 150, 165)
 	splashSub.TextTransparency = 1
 	splashSub.ZIndex = 81
@@ -130,9 +130,9 @@ function Core.init()
 	local iconMark = Instance.new("TextLabel")
 	iconMark.BackgroundTransparency = 1
 	iconMark.Size = UDim2.fromScale(1, 1)
-	iconMark.Font = Enum.Font.GothamBold
+	iconMark.Font = Enum.Font.GothamBlack
 	iconMark.Text = "e4u"
-	iconMark.TextSize = 13
+	iconMark.TextSize = 14
 	iconMark.TextColor3 = Color3.fromRGB(245,245,250)
 	iconMark.ZIndex = 41
 	iconMark.Parent = icon
@@ -204,9 +204,9 @@ function Core.init()
 	title.BackgroundTransparency = 1
 	title.Position = UDim2.new(0, 12, 0, 0)
 	title.Size = UDim2.new(1, -60, 1, 0)
-	title.Font = Enum.Font.GothamBold
+	title.Font = Enum.Font.GothamBlack
 	title.Text = "e4u"
-	title.TextSize = 18
+	title.TextSize = 20
 	title.TextColor3 = State.Theme.Text
 	title.TextXAlignment = Enum.TextXAlignment.Left
 	title.ZIndex = 22
@@ -303,9 +303,9 @@ function Core.init()
 	pageTitle.BackgroundTransparency = 1
 	pageTitle.Position = UDim2.new(0, 12, 0, 50)
 	pageTitle.Size = UDim2.new(1, -24, 0, 22)
-	pageTitle.Font = Enum.Font.GothamBold
+	pageTitle.Font = Enum.Font.GothamBlack
 	pageTitle.Text = "Home"
-	pageTitle.TextSize = 15
+	pageTitle.TextSize = 16
 	pageTitle.TextColor3 = Color3.fromRGB(220, 220, 230)
 	pageTitle.TextXAlignment = Enum.TextXAlignment.Left
 	pageTitle.ZIndex = 21
