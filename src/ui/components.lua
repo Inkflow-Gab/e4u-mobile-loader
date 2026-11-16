@@ -80,7 +80,7 @@ function Components.button(parent, text, order, accent)
 	b.Size = UDim2.new(1, 0, 0, 36)
 	b.BackgroundColor3 = accent and State.Theme.Accent or Color3.fromRGB(32, 32, 40)
 	b.Text = text
-	b.Font = Enum.Font.GothamSemibold
+	b.Font = Enum.Font.GothamBlack
 	b.TextSize = 13
 	b.TextColor3 = Color3.fromRGB(240, 240, 245)
 	b.AutoButtonColor = true
@@ -99,7 +99,7 @@ function Components.box(parent, placeholder, default, order)
 	t.Text = default or ""
 	t.PlaceholderText = placeholder or ""
 	t.ClearTextOnFocus = false
-	t.Font = Enum.Font.Gotham
+	t.Font = Enum.Font.GothamBold
 	t.TextSize = 13
 	t.TextColor3 = Color3.fromRGB(235, 235, 240)
 	t.PlaceholderColor3 = Color3.fromRGB(120, 120, 135)
