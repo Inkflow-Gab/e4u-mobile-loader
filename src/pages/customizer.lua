@@ -51,7 +51,7 @@ function Page.init()
 		if Refs.TopFix then Refs.TopFix.BackgroundTransparency = n end
 	end)
 
-	C.label(page, "Tips: drag top bar to move, use ◢ to resize, drag icon and nav dock anywhere (they're separate).", 7, 36)
+	C.label(page, "Drag top bar to move. Drag corner grip to resize. Icon and nav dock move separately.", 7, 36)
 	return page
 end
 
