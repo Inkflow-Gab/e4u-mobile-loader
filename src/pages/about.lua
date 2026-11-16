@@ -12,14 +12,14 @@ function Page.init()
 	txt.BackgroundTransparency = 1
 	txt.Size = UDim2.new(1, -24, 1, -24)
 	txt.Position = UDim2.new(0, 12, 0, 12)
-	txt.Font = Enum.Font.Gotham
+	txt.Font = Enum.Font.GothamBold
 	txt.TextSize = 13
 	txt.TextWrapped = true
 	txt.TextXAlignment = Enum.TextXAlignment.Left
 	txt.TextYAlignment = Enum.TextYAlignment.Top
 	txt.TextColor3 = Color3.fromRGB(180, 180, 195)
 	txt.ZIndex = 23
-	txt.Text = "e4u - modular mobile hub\n\nBuilt with custom UI assets (no emoji/symbol icons), separate floating icon and nav dock, draggable and resizable window.\n\nModules: services, state, utils, ui, features, pages, scripts.\nFeatures: ESP, teleport, CFrame fly + speed, profile/body viewer, avatar copy/apply.\nScripts: e4u Emotes (our own module).\n\nDesigned so issues can be traced to the specific file."
+	txt.Text = "e4u\n\nBuilt with custom UI assets (no emoji/symbol icons), separate floating icon and nav dock, draggable and resizable window.\n\nMODULES  services  state  utils  ui  features  pages  scripts\nFEATURES  ESP  TP  FLY  PROFILE  AVATAR\nSCRIPTS  e4u Emotes\n\nDesigned so issues can be traced to the specific file."
 	txt.Parent = card
 	return page
 end
